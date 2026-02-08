@@ -1,0 +1,60 @@
+/* decorative images */
+
+.cat {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: 70px;
+  opacity: 0.95;
+  z-index: 2;
+}
+
+/* corners */
+
+.corner {
+  position: fixed;
+  width: 70px;
+  opacity: 0.95;
+}
+
+.tl {
+  top: 12px;
+  left: 12px;
+}
+
+.bl {
+  bottom: 12px;
+  left: 12px;
+}
+
+.br {
+  bottom: 12px;
+  right: 12px;
+}
+
+/* scattered pouts */
+
+.pout {
+  position: fixed;
+  width: 65px;
+  opacity: 0.35;
+  filter: grayscale(10%);
+}
+
+.p1 {
+  top: 22%;
+  left: 18%;
+  transform: rotate(-12deg);
+}
+
+.p2 {
+  bottom: 28%;
+  right: 22%;
+  transform: rotate(15deg);
+}
+
+.p3 {
+  top: 55%;
+  right: 40%;
+  transform: rotate(-8deg);
+}
