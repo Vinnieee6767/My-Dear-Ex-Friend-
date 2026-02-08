@@ -1,0 +1,95 @@
+/* ---------- INTRO ---------- */
+
+.container.intro {
+  height: 100vh;
+  background: white;
+  font-family: 'VT323', monospace;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container .textCont {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+.song {
+  cursor: pointer;
+  font-size: 28px;
+}
+
+.fadeOut {
+  animation: fadeOut 0.8s forwards;
+}
+
+@keyframes fadeOut {
+  to { opacity: 0; }
+}
+
+/* ---------- LETTER PAGE ---------- */
+
+.letter {
+  position: fixed;
+  inset: 0;
+  background: black;
+  font-family: 'Roboto Mono', monospace;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.hidden {
+  display: none;
+}
+
+.textBox {
+  max-width: 720px;
+  padding: 35px;
+  font-size: 19px;
+  line-height: 1.8;
+  color: #ffd6df;
+  z-index: 2;
+}
+
+.glow {
+  animation: glow 4s infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 10px rgba(255,80,120,0.15); }
+  to { text-shadow: 0 0 25px rgba(255,80,120,0.45); }
+}
+
+/* decorative images */
+
+.cat {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: 70px;
+  z-index: 3;
+}
+
+.corner {
+  position: fixed;
+  width: 70px;
+  z-index: 2;
+}
+
+.tl { top: 12px; left: 12px; }
+.bl { bottom: 12px; left: 12px; }
+.br { bottom: 12px; right: 12px; }
+
+.pout {
+  position: fixed;
+  width: 60px;
+  opacity: 0.25;
+  z-index: 1;
+}
+
+.p1 { top: 22%; left: 18%; transform: rotate(-12deg); }
+.p2 { bottom: 26%; right: 22%; transform: rotate(14deg); }
+.p3 { top: 55%; right: 40%; transform: rotate(-8deg); }
