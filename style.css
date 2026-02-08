@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+}
+
+/* ---------- LANDING PAGE ---------- */
+
+body.landing {
+  margin: 0;
+  height: 100vh;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+}
+
+/* grid background */
+
+.grid {
+  position: fixed;
+  inset: 0;
+  background-size: 40px 40px;
+  background-image:
+    linear-gradient(to right, #eaeaea 1px, transparent 1px),
+    linear-gradient(to bottom, #eaeaea 1px, transparent 1px);
+  z-index: -1;
+}
+
+/* center content */
+
+.center {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.main-text {
+  font-size: 22px;
+  margin-bottom: 8px;
+}
+
+.tap-text {
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.heart {
+  font-size: 60px;
+  color: black;
+  text-decoration: none;
+  transition: 0.25s ease;
+}
+
+.heart:hover {
+  transform: scale(1.15);
+  color: #ff4d6d;
+}
+
+/* ---------- DECORATIVE IMAGES ---------- */
+
+.cat {
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  width: 70px;
+  z-index: 2;
+}
+
+.corner {
+  position: fixed;
+  width: 70px;
+  z-index: 2;
+}
+
+.tl { top: 12px; left: 12px; }
+.bl { bottom: 12px; left: 12px; }
+.br { bottom: 12px; right: 12px; }
+
+/* ---------- SCATTERED POUTS ---------- */
+
+.pout {
+  position: fixed;
+  width: 60px;
+  opacity: 0.35;
+}
+
+.p1 {
+  top: 22%;
+  left: 18%;
+  transform: rotate(-12deg);
+}
+
+.p2 {
+  bottom: 28%;
+  right: 22%;
+  transform: rotate(14deg);
+}
+
+.p3 {
+  top: 55%;
+  right: 40%;
+  transform: rotate(-8deg);
+}
